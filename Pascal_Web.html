@@ -1,0 +1,168 @@
+<!--Document au format html5-->
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8" /> <!--Norme de caractere-->
+		<title>Site HTML5 sur les cours en PASCAL</title>
+		<link rel="stylesheet" type="text/css" href="style.css"> <!-- Utilisation du fichier style.css pour éditer le texte et la page-->
+		<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+	</head>
+
+	<body>
+		<!-- balise entête-->
+		<header>
+
+			<img src="images/freepascal.jpg" class="imageflottante" alt="Image flottante" alt="freepascal">
+			<img src="images/logofreepascal.gif" class="imageflottante2" alt="Image flottante" alt="freepascal">
+			<h1 id="titre">Site HTML5 sur les cours en PASCAL</h1>
+			<p class="float">Free Pascal est un compilateur pour le langage Pascal, développé en tant que logiciel libre.</p>
+
+		</header>
+
+		<nav>
+
+			<h2 id="titre1">Menu</h2>
+			<ol> 
+				<li><a href="#Définition de l'agorithmie">Définition de l'agorithmie</a></li>
+				<li><a href="#Les variables">Variables</a></li>
+				<li><a href="#Les constantes">Constantes</a></li>
+				<li><a href="#Les instructions">Instructions</a></li>
+				<li><a href="#Les structures algorithmiques">Structures algorithmiques</a></li>
+				<li><a href="#Les procédures et les fonctions">Procédures et fonctions</a></li>
+				<li><a href="#Les paramètres">Paramètres</a></li>
+				<li><a href="#Les tableaux">Tableaux</a></li>
+			</ol>
+
+		</nav>
+
+		<section>
+					<h3 id="Définition de l'algorithmie">1) Définition rapide de l'algorithmie</h3>
+					<p>Suite d'opérations nécessaires et suffisantes à l'accomplissement d'une tâche.</p>
+		</section>
+
+		<section>
+					<h3 id="Les variables">2) Les variables</h3>
+					<h4>Notion de variable</h4>
+					<p>Une variable doit être définie : </p>
+					<p>Les opérations élémentaires possibles sur les variables sont :
+					<ul>
+						<li>Déclaration</li>
+						<li>Affectation</li>
+						<li>Utilisation</li>
+						<li>Ré-affectation</li>
+					</ul>
+					
+					<p>Les types élémentaires possibles sont :
+					</p>
+					<ul>
+						<li>Les entiers (integer en PASCAL)</li>
+						<li>Les réels (real)</li>
+						<li>Les caractères (char)</li>
+						<li>Les chaines de caractères (string)</li>
+						<li>Les booléens (boolean)</li>
+					</ul>
+					<p>En informatique, une variable possède à un moment donné une valeur et une seule.
+					</p>
+					<p>On déclare une variable en PASCAL avec "VAR" avant d'écrire BEGIN du programme principal</p>
+					<p class="retourmenu"><a href="#titre1"> RETOUR AU MENU </a></p>
+		</section>
+
+		<section>
+					<h3 id="Les constantes">3) Les constantes</h3>
+					<p>On doit INITIALISER une constante au début du programme pour pouvoir l'UTILISER par la suite.</p>
+					<p>La constante se déclare :
+					CONST TAILLE=20:[type de la variable];</p>
+					<p class="retourmenu"><a href="#titre1"> RETOUR AU MENU </a></p>
+		</section>
+
+		<section>
+					<h3 id="Les instructions">4) Les instructions</h3>
+					<p>C'est un ordre élémentaire que peut éxécuter PASCAL</p>
+					<ul>Instructions d'entrée-sortie :</ul>
+					<li>readln(LIRE = lecture de la frappe au clavier)</li>
+					<li>writeln(ECRIRE = afficher à l'écran)</li>
+					<p class="retourmenu"><a href="#titre1"> RETOUR AU MENU </a></p>
+		</section>
+
+		<section>
+					<h3 id="Les structures algorithmiques">5) Les structures algorithmiques</h3>
+					<p>Cela concerne la conceténation et les imbrications de séquences et ruptures de séquences. Elle forme ainsi une partie d'un programme.</p>
+					<h4>Catégories</h4>
+					<ul>Ruptures de séquences :</ul>
+					<li>Rupture conditionnelle et non répétitive : IF / CASE OF </li>
+					<li>Rupture répétitive : FOR / WHILE / REPEAT</li>
+					<h5>Ruptures conditionnelles :</h5> 
+					<p>IF ... THEN ... ENDIF</p>
+					<p>IF ... THEN ... ELSE ... ENDIF</p>
+					<p>CASE (var) OF ... </p>
+					<p>CASE (var) OF ... ELSE</p>
+					<h5>Ruptures répétitives :</h5>
+					<p>FOR (var) TO (var) DO ... ENDFOR</p>
+					<p>WHILE (var) DO ... UNTIL</p>
+					<p>REPEAT ... UNTIL (var)</p>
+					<p class="retourmenu"><a href="#titre1"> RETOUR AU MENU </a></p>
+		</section>
+
+		<section>
+					<h3 id="Les procédures et les fonctions">6) Les procédures et les fonctions</h3>
+					<p>Dans certains cas le programmeur peut vouloir décrire ou/et sauvegarder un enchainement d'actions qui n'existe pas de façon standard dans le compilateur. Cet usage est pratique lors de la réalisation d'un programme complexe. On décompose donc le programme en mini-blocs ayant chacun un rôle bien précis. Ce sont des PROCEDURES et des FONCTIONS.</p>
+					<h4>Les procédures</h4>
+					<p>C'est le déroulement classique d'un processus. On déclare une procédure dans la partie réservée aux variables.</p>
+					<p>Déclaration d'une procédure :
+					</p><p>PROCEDURE <nom_de_la_procedure> [(liste des paramètres : type)]<br/>VAR : liste des variables
+					<br/>BEGIN {corps de la procédure}<br/>{LISTE DES ACTIONS}<br/>END</p>
+					<p>Ensuite, il suffit d'écrire le nom de la procédure dans le bloc principal pour déclencher la liste des actions décrites.
+					Les variables déclarées à l'intérieur de la procédure sont inutilisables à l'extérieur du bloc.</p>
+					<h4>Les fonctions</h4>
+					<p>De même, que les procédures, une fonction est un sous programme. Mais la fonction à pour but principal d'effectuer un calcul et de renvoyer un résultat. On déclare une procédure dans la partie reservée aux variables.</p>
+					<p>Déclaration d'une fonction :
+					</p><p>FUNCTION <nom_de_la_fonction> [(liste des paramètres : type)] : type_fonction<br/>VAR : liste des variables
+					<br/>BEGIN {corps de la fonction}<br/>{LISTE DES ACTIONS}<br/>
+					nom_de_la_fonction:=resulat_des_calculs<br/>END</p>
+					<p>Le type de la fonction est le type de la valeur qui est renvoyée par la fonction.
+					Les variables déclarées à l'intérieur de la fonction sont inutilisables à l'extérieur du bloc, tout comme la procédure.</p>
+					<p class="retourmenu"><a href="#titre1"> RETOUR AU MENU </a></p>
+		</section>
+
+		<section>
+					<h3 id="Les paramètres">7) Les paramètres</h3>
+					<ul>Avant de parler des paramètres, il faut parler des différentes variables => les variables globales et les variables locales :</ul>
+					<li>Variable globale : Elle est définie dans l'en-tête du programme principal et est utilisable dans n'importe quel sous programme. Mais s'il existe une variable dans un sous programme qui porte le même nom qu'une variable globale alors c'est la variable locale qui sera prise en compte.</li>
+					<li>Variable locale : Elle est définie à l'intérieur d'un sous programme et sa portée est limitée à ce sous programme.</li>
+					<ul>Maintenant, pour en revenir aux paramètres, ceux-ci sont considérés comme des variables locales. Ce sont des valeurs du bloc principal dont le sous programme a besoin pour éxécuter les instructions du programme principal. Il y a 2 types de paramètres :</ul>
+					<li>Les paramètres formels : Ce sont les valeurs que recevra le sous-programme pour pouvoir fonctionner.</li>
+					<li>Les paramètres effectifs : Ce sont des valeurs réelles et actuelles reçues par le sous-programme au cours de l'éxécution du programme principal.</li>
+					<p>Chaque paramètre doit être identifié et doit avoir un type.
+					Les paramètres effectifs peuvent être des variables ou des constantes.Si c'est une variable : </p>
+					<ul></ul>
+					<li>1) Utiliser la valeur de la variable sans prendre en compte les modifications subies dans le programme principal => On parle de passage de paramètre par valeur</li>
+					<li>2) Utiliser la variable en lui attribuant les modifications subies par le sous programme et le programme principal</li>
+					<p>A) Passage de paramètre par valeur :</p>
+					<p>PROCEDURE <nom_procedure> (param1: type1;param2:type2);<br/>
+					FUNCTION <nom_fonction> (param1: type1;param2:type2):type;</p>
+					<p>B) Passage de paramètre par adresse : (Le paramètre formel se substitue au paramètre effectif lors de l'éxécution du sous programme et la variable prend la nouvelle valeur)</p>
+					<p>Pour cela on utilise le mot VAR avant la déclaration du paramètre. On peut utiliser passer des paramètres par valeur et par adresse dans le même sous programme.</p>
+					<p>FUNCTION <nom_fonction> (VAR param1: type1;param2:type2):type;</p>
+					<p class="retourmenu"><a href="#titre1"> RETOUR AU MENU </a></p>
+		</section>
+
+		<section class="tableaux">	
+					<h3 id="Les tableaux">8) Les tableaux :</h3>
+					<img src="images/image1.jpg" class="imageflottante3" alt="Tableaux_Pascal">
+					<p>Les tableaux à une dimension :<br/> TYPE : <nom_tableau>=array[1..N] of <type_element_du_tableau></p>
+					<p>Les tableaux à 2 dimensions :<br/> TYPE : <nom_tableau>=array[1..N,1..N] of <type_element_du_tableau></p>
+					<p>Quand on ne précise pas, le tableau commence toujours à 1.<br/>
+					Voici un exemple de déclaration et de création de tableau en PASCAL :</p>
+					<p>Le 1er FOR désigne les lignes du tableau et la 2ème boucle FOR désigne les colonnes.</p>
+					<p class="retourmenu"><a href="#titre1"> RETOUR AU MENU </a></p>
+		</section>
+
+		<footer>
+			<p>Vous pouvez utiliser des sites internets sur PASCAL pour appronfondir vos connaissances comme : <a href="http://www.freepascal.org/"> Freepascal.org </a><br/>
+			Copyright LUDUS - Tous droits réservés<br>
+			<a href="prof-number1-algo@ludus-academie.com">Contacter Monsieur LEHMANN pour de plus amples informations !</a></p>
+		</footer>
+
+
+	</body>
